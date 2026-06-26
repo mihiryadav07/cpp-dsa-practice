@@ -4,8 +4,8 @@ int main ()
 {
    int n = 100;
    int sum = 0;
-   for(int count=1; count<=n; count=count++)
+   for(int count=1; count<=n; count=count+2)
    { sum+=count; }
-   cout << "sum of all no. from 1 to n = " << sum << endl;
+   cout << "sum of all odd no. from 1 to n = " << sum << endl;
     return 0;
 }
