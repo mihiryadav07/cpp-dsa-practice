@@ -3,20 +3,17 @@ using namespace std;
 
 int main () 
 {
-   int m;
-   cout << "enter no. of line required = ";
-   cin >> m;
 
-   int n ;
- cout <<"no. of words per line = ";
-     cin >> n;
-  
-  
-     for(int i=1; i<=m; i++)     
-  { 
-     for(int i=1; i<=n; i++)
-     { cout << " CODING ";}
-       cout <<endl;
-  }
-    return 0;
+
+  int n;
+   cout << "enter the no. = ";
+  cin >> n;
+  int sum = 0;
+
+for(int i=3 ; i<=n ; i+=3)
+{ sum+=i;}
+ cout  << "sum of all no. from 1 to " << n << " which are divisble by 3 = " << sum << endl;
+
+
+   return 0;
 }
