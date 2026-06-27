@@ -1,11 +1,16 @@
 #include <iostream>
 using namespace std;
-int main ()
-{
-    int count = 1;
-    while(count <=5)
- { cout << count << " ";
- count++; }
- cout << endl;
+
+int main () {
+  for(int i=1; i<=100; i++)
+  {
+ int n = 2;
+ for(int i=1; i<=n; i++)
+ { cout << "*";}
+ cout <<endl;
+  }
+
+
+
     return 0;
 }
