@@ -3,7 +3,7 @@ using namespace std;
 int main() 
 {
 int n =4;
-char ch = 'A';
+
 for (int i=0; i<n; i++)
 { 
     //spaces = n-i-1
@@ -11,12 +11,14 @@ for (int i=0; i<n; i++)
     {cout << " ";}
 
     //num 1
-    for(int j=1; j<=i+1; j++)
-    {cout << ch; ch++;}
+    for(int j=0; j<=i; j++)
+    {char ch = 'A' + j;
+        cout << ch;}
 
     //num 2
-    for(int j=i; j>0; j--)
-    {cout << ch; ch--;}
+    for(int j=i-1; j>=0; j--)
+    {char ch = 'A' + j;
+        cout << ch;}
     
     cout << endl;
 }
